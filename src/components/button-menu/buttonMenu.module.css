@@ -1,0 +1,43 @@
+.root {
+  margin: 10px 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: 250px;
+  height: 46px;
+
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.root.active {
+  background: #5932EA;
+}
+
+.root svg:first-child {
+  margin: 0px 16px 0px 13px;
+}
+
+.root svg:last-child {
+  position: absolute;
+  right: 14px;
+}
+
+.root p {
+  margin-right: 106px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: -0.01em;
+  color: #9197B3;
+
+}
+
+.root.active p {
+
+  color: #FFFFFF;
+}
