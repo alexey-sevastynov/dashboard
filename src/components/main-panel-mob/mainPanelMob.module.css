@@ -1,0 +1,172 @@
+.root {
+  margin: 0;
+}
+
+.root h2 {
+  margin: 41px 0 0 71px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+
+}
+
+.root .wrapper {
+  position: relative;
+  margin: 0px;
+  max-width: 968px;
+
+
+  background: #FFFFFF;
+
+
+}
+
+.borderTableTop {
+  position: absolute;
+  top: 166px;
+  width: 100%;
+  border-bottom: 1px solid #EEEEEE;
+
+
+}
+
+.root .wrapper header {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+
+.root .wrapper header h3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+
+.root .wrapper header p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #16C098;
+}
+
+.root .wrapper header div:first-child {
+  padding: 0px 0px 0px 38px;
+}
+
+.root .wrapper header input {
+
+
+  border: unset;
+
+  width: 216px;
+  height: 100%;
+  background: #F9FBFF;
+  border-radius: 10px;
+  padding: 0px 0px 0px 40px;
+  box-sizing: border-box;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: black;
+  outline: none;
+
+}
+
+.root .wrapper header input::placeholder {
+  color: #B5B7C0;
+}
+
+.input {
+  margin: 20px 0px 20px 38px;
+  display: flex;
+  height: 38px;
+  position: relative;
+}
+
+.input svg {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+
+
+}
+
+
+.table {
+  margin: 0px 44px 0px 38px;
+}
+
+
+
+.table ul {
+  padding: 10px 0px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.table ul li {
+  margin: 3px 0px;
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #292D32;
+
+}
+
+.table ul li p {
+  width: 150px;
+}
+
+
+
+.btn {
+  cursor: pointer;
+  width: 80px;
+  height: 29px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  background: #FFC5C5;
+  border: 1px solid #DF0404;
+  color: #DF0404;
+}
+
+.btn.active {
+
+  background: rgba(22, 192, 152, 0.38);
+  border: 1px solid #00B087;
+  color: #008767;
+}
+
+
+
+
+
+.tableBottom {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.tableBottom p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #B5B7C0;
+}
