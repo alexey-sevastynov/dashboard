@@ -3,6 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import "./App.css";
 import SidePanel from "./components/side-panel/SidePanel";
 import SidePanelMob from "./components/side-panel-mob/SidePanelMob";
+import MainPanel from "./components/main-panel/MainPanel";
 
 function App() {
   const isDesktopOrLaptop = useMediaQuery({
@@ -14,6 +15,7 @@ function App() {
       <div className="wrapper">
         {isDesktopOrLaptop && <SidePanelMob />}
         <SidePanel />
+        <MainPanel />
       </div>
     </div>
   );

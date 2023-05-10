@@ -1,0 +1,48 @@
+.root {
+  width: 275px;
+  height: 24px;
+
+  display: flex;
+
+}
+
+.root button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  padding: 0px;
+
+
+
+  width: 26px;
+  height: 100%;
+  background: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+
+
+  letter-spacing: -0.01em;
+
+  color: #404B52;
+}
+
+.root button:not(:last-child) {
+  margin-right: 12px;
+}
+
+.root span {
+  margin-right: 12px;
+
+}
+
+.root button.active {
+  background: #5932EA;
+  border: 1px solid #5932EA;
+  color: #FFFFFF;
+}
