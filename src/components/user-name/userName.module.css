@@ -31,7 +31,8 @@
 @media(max-width: 1400px) {
   .root {
     position: relative;
-
+    bottom: 0;
+    left: 0;
 
 
     height: 42px;

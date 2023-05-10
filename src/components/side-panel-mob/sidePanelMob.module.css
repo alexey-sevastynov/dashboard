@@ -8,6 +8,7 @@
 }
 
 .top {
+  position: relative;
   padding: 39.1px 0px 0px 31.45px;
   height: 39px;
 
@@ -25,6 +26,11 @@
 
   align-items: baseline;
 
+}
+
+.userName {
+  position: absolute;
+  right: 31.45px;
 }
 
 .header span {
@@ -56,4 +62,23 @@
   align-items: center;
 
 
+}
+
+
+@media(max-width:485px) {
+  .userName {
+    position: absolute;
+    right: 31.45px;
+    top: 100px;
+  }
+
+  .menu {
+    margin: 65px 38px 30px 38px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+  }
 }

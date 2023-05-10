@@ -3,6 +3,7 @@ import styles from "./mainPanel.module.css";
 import ListItem from "../list-item/ListItem";
 import { allCustomers } from "../../assets/listCustomers";
 import Tabulation from "../tabulation/Tabulation";
+import UserName from "../user-name/UserName";
 
 const keys = ["name", "company", "phone", "email", "country", "status"];
 

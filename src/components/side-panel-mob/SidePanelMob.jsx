@@ -2,6 +2,7 @@ import React from "react";
 import { btnsNavMenu } from "../../assets/btnNavMenu";
 import styles from "./sidePanelMob.module.css";
 import ButtonMenu from "../button-menu/ButtonMenu";
+import UserName from "../user-name/UserName";
 
 function SidePanelMob() {
   return (
@@ -26,6 +27,9 @@ function SidePanelMob() {
         <div className={styles.header}>
           <h1>Dashboard</h1>
           <span>v.01</span>
+        </div>
+        <div className={styles.userName}>
+          <UserName />
         </div>
       </div>
 
