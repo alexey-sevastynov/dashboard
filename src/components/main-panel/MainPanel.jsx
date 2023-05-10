@@ -4,7 +4,29 @@ import ListItem from "../list-item/ListItem";
 import { allCustomers } from "../../assets/listCustomers";
 import Tabulation from "../tabulation/Tabulation";
 
-function MainPanel() {
+const keys = ["name", "company", "phone", "email", "country", "status"];
+
+function MainPanel({ query, setQuery }) {
+  const onChangeSearch = (event) => {
+    setQuery(event.target.value);
+  };
+
+  const search = (data) => {
+    return data.filter((item) =>
+      // item.name.toLowerCase().includes(query) ||
+      // item.company.toLowerCase().includes(query) ||
+      // item.phone.toLowerCase().includes(query) ||
+      // item.email.toLowerCase().includes(query) ||
+      // item.country.toLowerCase().includes(query) ||
+      // !item.status.toLowerCase().indexOf(query)
+      keys.some((key) =>
+        key === "status"
+          ? !item[key].toLowerCase().indexOf(query)
+          : item[key].toLowerCase().includes(query)
+      )
+    );
+  };
+
   return (
     <div className={styles.root}>
       <h2>Hello Evano👋🏼,</h2>
@@ -16,7 +38,12 @@ function MainPanel() {
             <p>Active Members</p>
           </div>
           <div className={styles.input}>
-            <input type="text" placeholder="Search" />
+            <input
+              type="text"
+              placeholder="Search"
+              onChange={(e) => onChangeSearch(e)}
+              value={query}
+            />
             <svg
               width="20"
               height="20"
@@ -52,7 +79,7 @@ function MainPanel() {
             <li className={styles.col_6}>Status</li>
           </ul>
 
-          {allCustomers.map((customer) => (
+          {search(allCustomers).map((customer) => (
             <ListItem key={customer.id} {...customer} />
           ))}
         </div>

@@ -7,6 +7,7 @@ import MainPanel from "./components/main-panel/MainPanel";
 import MainPanelMob from "./components/main-panel-mob/MainPanelMob";
 
 function App() {
+  const [query, setQuery] = React.useState("");
   const isDesktopOrLaptop = useMediaQuery({
     query: "(max-width: 1400px)",
   });
@@ -18,9 +19,9 @@ function App() {
     <div className="container">
       <div className="wrapper">
         {isDesktopOrLaptop && <SidePanelMob />}
-        {isMobile && <MainPanelMob />}
+        {isMobile && <MainPanelMob query={query} setQuery={setQuery} />}
         <SidePanel />
-        <MainPanel />
+        <MainPanel query={query} setQuery={setQuery} />
       </div>
     </div>
   );
